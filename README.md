@@ -6,7 +6,7 @@
 - Aplicação de ponta-a-ponta: banco de dados, beck-end/ font-end
 - Interagir com DOM (api-web)
 - Requisições dinâmicas
-- Iot (Internet das coisas: o JS está presente em tudo
+- Iot (Internet das coisas: o JS está presente em tudo)
 - ECMAScript
 
 ## Fundamentos JS
