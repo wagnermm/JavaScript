@@ -27,11 +27,6 @@ form {
     border-radius: 10px;
 }
 
-form:hover {
-    background-image: linear-gradient(to left, rgb(146, 144, 144), rgb(255, 255, 255));
-}
-
-
 h2 {
     font-size: 18px;
     margin-bottom: 2rem;
@@ -73,7 +68,6 @@ button:disabled:hover {
     background-color: #2121be;
 }
 
-.mensagem,
 #resultado {
     font-size: 2rem;
     text-align: center;
@@ -82,7 +76,7 @@ button:disabled:hover {
 
 .mensagem-nome, .mensagem-city,
 .mensagem-email, .mensagem-cep,
-.mensagem-uf{
+.mensagem-phone, .mensagem-uf{
     font-size: 1.4rem;
     margin-bottom: 12px;
     height: auto;

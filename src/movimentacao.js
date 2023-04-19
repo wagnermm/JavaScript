@@ -23,7 +23,7 @@ class Registro {
         resumo(){
             let valorAtualizado = 0
             let tipo = ''
-            const regex = new RegExp('x', 'gi') // Expressões Regulares
+            const regex = new RegExp('x', 'gi')
             this.movimentacoes.forEach(lancamento => {
                 lancamento.banco = lancamento.banco.replace(regex, 'Y')
                 if(!lancamento.banco.match(regex)){
@@ -46,5 +46,5 @@ class Registro {
     console.log('O saldo dos registros ' + registro01.resumo())
     
     const movimentacoesGerais = [m01, m02, m03, m04, m05]
-
+    
     movimentacoesGerais.map( elemento => console.log(elemento.banco.length))
