@@ -1,0 +1,16 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "- Fórmula / Molde dinâmico\r - Coleção de propriedas (atribuitos)\r - Associáveis (chave / valor)\r - Relação com objetos da vida real\r - Atributos: cor, forma, material, peso, identificação, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Wagner Miranda",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "typescript": "^5.0.4"
+  }
+}

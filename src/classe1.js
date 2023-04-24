@@ -9,3 +9,5 @@ class Animal {
 
 const dog = new Animal('Cachorro')
 dog.ingles()
+
+export default Animal
