@@ -8,6 +8,30 @@
 </head>
 <body>
     <div id="main"></div>
-    <script src="./exams.js" type="module"></script>
+
+    <div id="app">
+        {{ message }}
+        Meu nome é {{ nome }}
+
+        <span v-bind:title="message2"><br>
+            Agora eu vou comentar aqui na mensagem 2!
+        </span><br>
+
+        <span v-if="seen">Now you see me</span>
+    </div>
+
+    <!--<script src="./exams.js" type="module"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!',
+                    nome: 'Wagner',
+                    message2: 'You loaded this page on ' + new Date().toLocaleString(),
+                    seen: true
+                }
+            })
+    </script>
 </body>
 </html>
