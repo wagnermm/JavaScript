@@ -21,7 +21,7 @@ filteredMonths.forEach(month => {
 let meses = [30,30,30] // array comum
 
 // Reduce - função com todos os itens do array e devolve um valor único
-let sumMonthDays = filteredMonths.reduce( (prev, next) => {
+let sumMonthDays = months.reduce( (prev, next) => {
     return {days: prev.days + next.days}
 })
 
@@ -33,6 +33,6 @@ let years = cachorros.map( (cachorro => {
 }))
 
 document.getElementById('main').innerHTML = 
-    toPrint + '<br> Soma dos dias dos meses selecionados: ' 
-    + sumMonthDays.days + '<br> idade humana dos cachorros: '  
+    toPrint + '<br> Soma dos dias dos meses do ano: ' 
+    + sumMonthDays.days + '<br> Idade humana dos cachorros: '  
     + years + ' '
