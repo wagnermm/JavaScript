@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap-grid.css">
+    <style>
+            :root {
+        --main-color : #f3ecec;
+        --color01 : #56b0ec;
+        --color02 : #1681ac;
+        --color03 : #e1e2ec;
+        --color04 : #9bc254;
+        --color05 : #494949;
+        --color06 : #95dd0f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.2%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: var(--main-color);
+            width: 600px;
+            margin-top: 60px;
+            border: 1px solid var(--color02);
+        }
+
+        #top {
+            margin-left: 30px;
+        }
+
+        .row {
+            margin-bottom: 30px;
+        }
+
+        .title {
+            margin-top: 30px;
+            color: var(--color02);
+        }
+
+        .sub-title {
+            color: var(--color04);
+        }
+
+        h3 {
+            color: var(--color05);
+        }
+
+        #colum-1 {
+            background: var(--color02);
+            padding: 25px;
+        }
+
+        #colum-1:hover {
+            background-color: rgba(22, 129, 172, 0.9);
+        }
+
+        #colum-2 {
+            background: var(--color01);
+            padding: 25px;
+        }
+
+        #colum-2:hover {
+            background-color: rgba(86, 176, 236, 0.9);
+        }
+
+        #colum-1 h1, h2 {
+            color: var(--color03);
+            font-family: cursive;
+        }
+
+        #colum-1 h3 {
+            color: var(--color03);
+            margin-bottom: 30px;
+        }
+
+        small {
+            font-size: 14px;
+            font-family: cursive;
+            color: rgb(173, 171, 171);
+            margin-left: 10px;
+        }
+
+        .btn {
+            background-color: var(--color06);
+            color: var(--color03);
+            font-family: cursive;
+            padding: 10px;
+            width: 70%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgba(149, 221, 15, 0.8);
+        }
+
+        #colum-2 h3 {
+            color: var(--color03);
+            margin-bottom: 5px;
+        }
+    </style>
+    <title>Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col" id="top">
+                <h1 class="title">Join our community</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="top">
+                <h2 class="sub-title">30-days, hassle-free money back guarantee</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="top">
+                <h3>Gain acess to our full library of tutorials alog with expert code reviews.<h3><br>
+                    <h3>Perfect for any developers who are serious about honing their skills</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="colum-1">
+                    <h2>Monthly Subscripition</h2><br>
+                    <h1>$29<small>per month</small></h1><br>
+                    <h3>Full acess for less then $1 a day</h3>
+                    <button class="btn" type="submit">Sign-up</button>
+                </div>
+                <div class="col-md-6" id="colum-2">
+                    <h2>Why us?</h2><br>
+                    <h3>Tutorials by industry experts</h3>
+                    <h3>Peer & expertcode review</h3>
+                    <h3>Coding exercises</h3>
+                    <h3>Acesses to our GitHub repas</h3>
+                    <h3>community forum</h3>
+                    <h3>Flashcard decks</h3>
+                    <h3>New videos every week</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

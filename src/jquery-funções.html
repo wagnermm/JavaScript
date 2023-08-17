@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>JavaScript/jQuery</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tela/jQuery</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Clique aqui para mudar a cor</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Clique aqui para mudar a cor</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Clique aqui para mudar a cor</h2>
+            </div>
+        </div>
+        <h1>JS puro</h1>
+        <div class="row">
+            <div class="col-6 md-12">
+                <h2>Velocímetro</h2>
+                <h6>Velocidade máxima 40km</h6>
+                <input type="number" max="100" id="vel">
+                <div id="message"></div>
+                <button id="btn" onclick=" velocimetro()">click</button>
+            </div>
+            <div class="col-6 md-12">
+                <h2>Calcular a média</h2>
+                <h6>Média para aprovação 6</h6>
+                <label for="a">Nota 1</label>
+                <input type="number" max="10" id="a">
+                <label for="b">Nota 2</label>
+                <input type="number" max="10" id="b">
+                <label for="c">Nota 3</label>
+                <input type="number" max="10" id="c">
+                <label for="d">Nota 4</label>
+                <input type="number" max="10" id="d">
+                <button id="calc">Calcular</button>
+                <div id="res"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 md-12">
+                <h2>Contador com laço for</h2>
+                <div class="contador">
+                    <button id="cont">iniciar</button>
+                    <div id="exibir"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./vendor/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

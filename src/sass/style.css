@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e4f7;
+  height: 100vh;
+  margin-bottom: 20rem;
+}
+
+.container {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.container h1 {
+  color: #7e1616;
+  margin-bottom: 3rem;
+}
+.container .row {
+  border: 1px solid #030a44;
+  text-align: center;
+}
+.container .row .col h2 {
+  color: #030a44;
+  margin: 0.5rem;
+}
+.container .row .col-6 #message {
+  height: 50px;
+  padding: 10px;
+}
+.container .row .col-6 #btn {
+  background-color: rgb(71, 70, 70);
+  color: #e2e4f7;
+  border: #e2e4f7;
+  border-radius: 3px;
+  width: 55px;
+}
+.container .row .col-6 input {
+  display: block;
+  margin: auto;
+}
+.container .row .col-6 #calc {
+  background-color: rgb(71, 70, 70);
+  color: #e2e4f7;
+  border: #e2e4f7;
+  border-radius: 3px;
+  width: 55px;
+}
+.container .row .col-6 #res {
+  height: 50px;
+  padding: 10px;
+}
+.container .contador {
+  width: 100px;
+  padding: 20px;
+  border: 1px solid black;
+}
+.container .contador #cont {
+  background-color: rgb(71, 70, 70);
+  color: #e2e4f7;
+  border: #e2e4f7;
+  border-radius: 3px;
+  width: 55px;
+}
+.container .contador #exibir {
+  height: auto;
+  width: 60px;
+  margin-top: 10px;
+  color: #030a44;
+  text-align: center;
+  background-color: #e2e4f7;
+  border: 1px solid #050505;
+}
+.container .contador #iniciar {
+  width: 60px;
+}/*# sourceMappingURL=style.css.map */
