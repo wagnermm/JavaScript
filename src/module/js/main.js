@@ -1,5 +1,5 @@
-import color from './colors.js'
-import carros from './cars.js'
+import color from './colors'
+import carros from './cars'
 
 
 // filtrer faz a filtragem
