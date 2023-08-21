@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgb(146, 144, 144), rgb(255, 255, 255));
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .form-title h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3rem;
+            color: #f00;
+        }
+
+        form {
+            background: #ddd;
+            padding: 20px;
+            display: block;
+            margin: 20px auto;
+            width: 50%;
+            border: 1px solid #4545c2;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        input, button {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        input {
+            width: 80%;
+            padding: 1rem 2rem;
+        }
+
+        button {
+            border: 0 none;
+            border-radius: 2rem;
+            color: #fff;
+            background-color: #2121be;
+            width: 10rem;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+        button:hover {
+            background-color: #4545c2;
+        }
+
+        button:disabled {
+            opacity: .4;
+            cursor: default;
+        }
+
+        button:disabled:hover {
+            background-color: #2121be;
+        }
+
+        #resultado {
+            font-size: 2rem;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .mensagem-nome, .mensagem-city,
+        .mensagem-email, .mensagem-phone {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            height: auto;
+        }
+
+        .erro {
+            border-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+    <script>
+        document.querySelector('#main').innerHTML='<form><h2>Faça seu cadastro</h2><input type="text" placeholder="Digite seu nome" name="nome" id="nome" onchange="disableButton()"><div class="mensagem-nome"></div><input type="text" placeholder="Digite seu e-mail" name="email" id="email" onchange="disableButton()"><div class="mensagem-email"></div><input type="text" placeholder="Digite seu telefone" name="telefone" id="telefone" onchange="disableButton()" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="12"><div class="mensagem-phone"></div><button type="submit" id="btn" disabled>Enviar</button></form>'
+
+    const validaName = (elemento) => {
+    elemento.addEventListener('focusout', function(e) {
+        e.preventDefault();
+        const nameValido = /^[a-z]/i
+        if(this.value.match(nameValido)){
+            document.querySelector('.mensagem-nome').innerHTML = ""
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            return false
+        } else {
+            document.querySelector('.mensagem-nome').innerHTML = "Digite um nome válido"
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+        }
+    })
+}
+let camposName = document.querySelectorAll('input#nome')
+for( let emFoco of camposName) {
+    validaName(emFoco)
+};
+
+//function validaEmail(elemento){
+const validaEmail = (elemento) => {   
+    elemento.addEventListener('focusout', function(e) { 
+        e.preventDefault();    
+        const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+        if(this.value.match(emailValido)) {
+            document.querySelector('.mensagem-email').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            return false
+        } else {
+            document.querySelector('.mensagem-email').innerHTML = "Por favor, informe o seu E-mail";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+        }
+    });
+};
+let camposEmail = document.querySelectorAll('input#email');
+for( let emFoco of camposEmail) {
+    validaEmail(emFoco);
+};
+
+const validaPhone = (elemento) => {
+    elemento.addEventListener('focusout', function(e) {
+        e.preventDefault();
+        const phoneValido = /[0-9]/;
+        if(this.value.match(phoneValido)){
+            document.querySelector('.mensagem-phone').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            return false
+        } else {
+            document.querySelector('.mensagem-phone').innerHTML = "Por favor, informe o seu telefone";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+        }
+    });
+};
+let camposPhone = document.querySelectorAll('input#telefone');
+for( let emFoco of camposPhone) {
+    validaPhone(emFoco)
+};
+
+// Abilitar botão
+function disableButton() {
+    const name = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    if(name && email && telefone) {
+        document.querySelector('#btn').disabled = false;
+        return
+    } else {
+        document.querySelector('#btn').disabled = true;
+    };
+};
+    </script>
+</body>
+</html>
