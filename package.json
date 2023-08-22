@@ -9,10 +9,12 @@
   "keywords": [],
   "author": "Wagner Miranda",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "http-server": "^14.1.1",
     "jquery": "^3.7.0",
+    "node-fetch": "^3.3.2",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
