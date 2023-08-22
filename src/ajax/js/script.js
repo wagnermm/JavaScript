@@ -13,7 +13,9 @@ function getUser(user) {
     })
     .then((response) => (response.json()))
     .then((data) => {
-        text += `${data.name} possui ${data.public_repos} repositórios no GitHub com ${data.login}<br>`
+        text += `
+            <p>${data.name} possui ${data.public_repos} repositórios no GitHub com ${data.login}</p><br>
+        `
         main.innerHTML= text
     })
     .catch((error) => console.error('Erro: ', error.message || error))

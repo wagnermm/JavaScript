@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Ajax</title>
 </head>
 <body>
-    <h1>Teste com Ajax</h1>
-    <div id="main"></div>
-    <form>
-        <input type="text" placeholder="nome do usuário" id="username">
-    </form>
+    <div class="container">
+        <section>
+            <h1>Posts</h1>
+            <div id="posts"></div>
+            <button class="button" id="loadPost">Carregar mais posts</button>
+        </section>
+        <hr />
+        <section>
+            <h1>Github</h1>
+            <div id="main"></div>
+            <input type="text" placeholder="nome do usuário" id="username">
+        </section>
+    </div>
     <script src="./js/script.js"></script>
     <script src="./js/posts.js"></script>
 </body>
