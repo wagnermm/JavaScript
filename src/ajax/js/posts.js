@@ -29,14 +29,13 @@ function getPosts() {
     .then( response => response.json())
     .then( data => { 
         postLength = data.length
-        console.log(postLength)
     })
     .catch(error => console.error(error))  
 }
 
 // Solicita um post por ID
 function getPost(id) {
-        fetch('https://jsonplaceholder.typicode.com/comments/' + id, {
+        fetch('https://jsonplaceholder.typicode.com/comments/3' + id, {
         headers: {
             'Content-Type' : 'application/json; charset=UTF-8'
         }
@@ -46,6 +45,7 @@ function getPost(id) {
         postMarkup += `
         <div class="posts-item" id="post-${post.id}">
         <h3>${post.email}</h3>
+        <h3>${post.name}</h3>
         <p>${post.body}</p>
         </div>
         `
