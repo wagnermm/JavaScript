@@ -14,10 +14,8 @@ class Produto {
 
     salvar() {
         let produto = this.lerDados()
-        if(this.validaCampos(produto)) {
-            this.adicionar(produto)
-        }
-        this.listaTabela()
+        alert('salvar')
+        console.log(produto)
     }
 
     listaTabela() {
@@ -37,18 +35,16 @@ class Produto {
     }
 
     lerDados() {
-        let produto = {}
 
         produto.id = this.id
-        produto.nomeProduto = document.getElementById('produto').value
-    }
+        let product = document.getElementById('produto').value
+        let price = document.getElementById('preco').value
 
-    validaCampos(produto) {
         let message = ''
-        if(produto.nomeProduto == '') {
+        if(product == '') {
             message += '- Informe o Nome do Produto \n'
         }
-        if(produto.preco == '') {
+        if(price == '') {
             message += '- Informe o Preço do Produto \n'
         }
         if(message != '') {
@@ -58,6 +54,7 @@ class Produto {
 
         return true
     }
+
 
     cancelar() {
 
