@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
+    background-color: #cfcbcb;
    /* border: 1px solid #f00;*/
 }
 .aba {
@@ -34,7 +34,6 @@
     border-radius: 10px 10px 0 0;
     margin-right: 0.1px;
 }
-
 .abaSelecionada {
     /*background-color: #248;*/
     background-color: #ddd;
@@ -45,3 +44,13 @@
     overflow-x: hidden;
     /* border: 1px solid #f00;*/
 }
+.btn-all {
+    background-color: #248;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+
