@@ -22,7 +22,7 @@ section {
 }
 .container {
     width: 60%;
-    height: 80vh;
+    height: auto;
     padding: 2rem;
     background-color: #fff;
     border-radius: 20px;
@@ -89,10 +89,13 @@ label {
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-.erro {
+.info-erro {
     font-size: 1.2rem;
     color: #ff4500;
     font-weight: 400;
+}
+.erro {
+    border-color: #ff4500;
 }
 input {
     outline: none;
@@ -107,6 +110,10 @@ input {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+.btn:disabled {
+    opacity: 70%;
+    cursor: auto;
 }
 .btn:hover {
     background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
