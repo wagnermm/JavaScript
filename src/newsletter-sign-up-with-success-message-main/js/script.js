@@ -1,8 +1,9 @@
 let emailValid = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
-let emailField = document.querySelectorAll('input#email');
-for( let emFoco of emailField) {
-    validEmail(emFoco);
-};
+let formContainer = document.getElementById('container');
+let form = document.getElementById('form');
+let button = document.getElementById('button');
+let subscribing = document.getElementById('subscribing');
+let subscribingBtn = document.getElementById('subscribing-btn');
 
 const validEmail = (elemento) => {   
     elemento.addEventListener('focusout', function(e) { 
@@ -20,12 +21,34 @@ const validEmail = (elemento) => {
     });
 };
 
+let emailField = document.querySelectorAll('input#email');
+for( let emFoco of emailField) {
+    validEmail(emFoco);
+};
+
 const buttonAbled = ()=> {
     const email = document.getElementById('email').value;
     if(email.match(emailValid)) {
-        document.querySelector('#button').disabled = false;
+        button.disabled = false;
         return
     } else {
-        document.querySelector('#button').disabled = true;
+        button.disabled = true;
     };
 };
+
+
+button.addEventListener('click', function() {
+    if(email) {
+        button.disabled = true;
+        formContainer.style.visibility="hidden";
+        subscribing.style.display="flex";
+    } else {
+        button.disabled = false;
+        formContainer.style.visibility="visible"; 
+        subscribing.style.display="none";
+    };
+});
+
+subscribingBtn.addEventListener('click', function() {
+    location.reload();
+});

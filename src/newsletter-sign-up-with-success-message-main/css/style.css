@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
 }
 section {
+    position: relative;
     margin-top: 7vh;
     width: 100%;
     padding: 20px;
@@ -67,10 +68,10 @@ section {
     padding: 0.3rem;
     margin-right: 1rem;
     color: #fff;
-    background-color: #ff4500;
+    background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
     border-radius: 1.5rem;
 }
-i {
+.ether i {
     font-size: 1rem;
 }
 .form {
@@ -120,10 +121,197 @@ input {
     transition: ease-in-out 0.4s;
 }
 .form-template {
+    position: relative;
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
     border-radius: 1rem;
+    overflow-x: hidden;
+}
+.contentSide1 {
+    position: absolute;
+    bottom: 15vh;
+    left: -12vw;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
+    border: 1rem solid #130a25;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.ether-inside1 {
+    position: absolute;
+    top: -8vh;
+    right: 8vw;
+    background: linear-gradient(to right, rgb(243, 159, 3) 0%, rgba(242,88,4,1) 100%);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.ether-inside2 {
+    position: absolute;
+    bottom: -10vh;
+    left: 18vw;
+    background: linear-gradient(to left, rgb(243, 159, 3) 0%, rgba(242,88,4,1) 100%);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.contentSide2 {
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 30px;
+    background-color: #130a25;
+    border-radius: 10px 10px 0 0;
+}
+.ether1-contentSide2, .ether2-contentSide2,
+.ether3-contentSide2 {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.2rem;
+    margin: 3px 0 0 10px;
+}
+.ether1-contentSide2 {
+    background-color:  #e32609;
+}
+.ether2-contentSide2 {
+    background-color: #f25804;
+}
+.ether3-contentSide2 {
+    background-color: #00ffff;
+}
+.contentSide3 {
+    position: absolute;
+    top: 18vh;
+    left: 10vw;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 10px;
+}
+.list-content {
+    width: 80px;
+    height: 100%;
+    padding: 1rem;
+    background: linear-gradient(0deg, #fff 0%, #bbb 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.listElement-1 {
+    margin-top: 0.5rem;
+    width: 60px;
+    border-bottom: 8px solid #aaa;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.listElement-2 {
+    width: 50px;
+    border-bottom: 8px solid #aaa;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.listElement-3 {
+    width: 60px;
+    border-bottom: 8px solid #aaa;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.listElement-4 {
+    width: 40px;
+    border-bottom: 8px solid #aaa;
+    border-radius: 1rem;
+}
+.graphic {
+    position: absolute;
+    top: -8vh;
+    right: 14vw;
+    width: 80px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.graphic img {
+    width: 100%;
+}
+.subscribing-container {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    padding: 4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.subscribing-ether-container {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.subscribing-ether {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.7rem;
+    align-items: flex-start;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
+    border-radius: 3rem;
+}
+.subscribing-ether i {
+    font-size: 2rem;
+}
+.subscribing-thank {
+    margin-top: 2rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.subscribing-thank h1 {
+    font-size: 4rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #322d3d;
+    margin-bottom: 2rem;
+}
+.subscribing-thank p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: #322d3d;
+    margin-bottom: 3rem;
+}
+.subscribing-thank a {
+    text-decoration: none;
+    color: #130a25;
+    font-weight: 700;
+}
+.subscribing-btn {
+    width: 100%;
+    background-color: #130a25;
+    color: #fff;
+    height: 4rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.subscribing-btn:hover {
+    background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
 }
 footer {
     width: 100%;
