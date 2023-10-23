@@ -1,0 +1,70 @@
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moalContent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+}
+input {
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+.btnActionsForm {
+    display: flex;
+    gap: 2rem;
+}
+.btnSalvar {
+    width: 80px;
+    height: 30px;
+    background-color: #228827;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.btnSalvar:hover {
+    background-color: #0fc418;
+    border: 1px solid #fff;
+}
+.btnCancelar {
+    width: 80px;
+    height: 30px;
+    background-color: #882222;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.btnCancelar:hover {
+    background-color: #bb1212;
+    border: 1px solid #fff;
+}

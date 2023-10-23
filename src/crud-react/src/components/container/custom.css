@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnContent {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    margin: 5rem 0 2rem 0;
+}
+.btnCadastrar {
+    width: 100px;
+    height: 40px;
+    background-color: #248;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.btnCadastrar:hover {
+    background-color: rgb(14, 78, 207);
+    letter-spacing: 1px;
+}
+.table {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+thead, tbody {
+    width: 100%;
+}
+th {
+    font-size: 1.8rem;
+}
+tr {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ddd;
+    font-weight: 700;
+}
+.actions {
+    display: flex;
+    gap: 2rem;
+}
+.btnEditar {
+    width: 80px;
+    height: 30px;
+    background-color: #228827;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btnEditar:hover {
+    background-color: #0fc418;
+}
+.btnExcluir {
+    width: 80px;
+    height: 30px;
+    background-color: #882222;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btnExcluir:hover {
+    background-color: #bb1212;
+}
+.cadastro1Excluido, .cadastro2Excluido,
+.cadastro3Excluido {
+    display: none;
+}
