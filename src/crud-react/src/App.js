@@ -1,11 +1,11 @@
 
-import Container from './components/container/Container';
+import Cadastro from './components/cadastro/Cadastro';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Container/>
+      <Cadastro/>
     </div>
   );
 }
