@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #248;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav {
+    margin-right: 2rem;
+}
+ ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+ li {
+    list-style: none;
+    font-size: 1.8rem;
+}
+a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
