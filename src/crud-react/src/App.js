@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Link, Route } from 'react-router-dom';
-import Cadastro from './components/cadastro/Cadastro';
-import Home from './components/Home/Home';
+import Cadastro from './Pages/Cadastro/Cadastro';
+import Home from './Pages/Home/Home';
+import Logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <BrowserRouter>
         <header className='header'>
           <div className='logo'>
-            <img alt='logo'/>
+            <img src={Logo}  alt='logo'/>
           </div>
           <nav className='nav'>
             <ul>
